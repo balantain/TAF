@@ -15,6 +15,6 @@ public class SimpleTest extends BaseTest{
                 .clickMoreNewsLink()
                 .getTitle()
                 .getText();
-        assertThat(title).isEqualTo("Posts in 2022");
+        assertThat(title).isEqualTo("Posts in 2022!");
     }
 }

@@ -11,7 +11,7 @@ public abstract class AbstractPage {
     protected final int DEFAULT_WAIT_TIMEOUT_SECONDS = 10;
 
     public AbstractPage(WebDriver driver) {
-        this.driver = DriverManager.getDriver();
+        this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 }

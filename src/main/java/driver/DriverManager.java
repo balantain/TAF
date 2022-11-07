@@ -8,18 +8,18 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class DriverManager {
 
     private static WebDriver driver;
-//    private static final String RESOURCES_PATH = "src\\main\\resources\\";
+//    private static final String DRIVERS_PATH = "src\\main\\resources\\drivers\\";
 
     public static WebDriver getDriver() {
         if (driver == null){
-            switch (System.getProperty("browser")) {
+            switch (System.getProperty("browser", "chrome")) {
                 case "firefox":
-//                    System.setProperty("webdriver.gecko.driver", RESOURCES_PATH + "geckodriver.exe");
+//                    System.setProperty("webdriver.gecko.driver", DRIVERS_PATH + "geckodriver.exe");
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
                     break;
                 default:
-//                    System.setProperty("webdriver.chrome.driver", RESOURCES_PATH + "chromedriver.exe");
+//                    System.setProperty("webdriver.chrome.driver", DRIVERS_PATH + "chromedriver.exe");
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
             }

@@ -9,7 +9,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class SimpleTest extends BaseTest{
 
     @Test
-    public void testSelenium() {
+    public void testShouldFail() {
         String title = new SeleniumDev(driver)
                 .openPage()
                 .clickMoreNewsLink()

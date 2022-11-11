@@ -1,7 +1,9 @@
 package tests;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.SeleniumDev;
+import utils.ReportPortalTestListener;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

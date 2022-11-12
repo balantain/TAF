@@ -8,5 +8,6 @@
     </test>
     <listeners>
         <listener class-name="utils.ReportPortalTestListener"/>
+        <listener class-name="utils.TestListener"/>
     </listeners>
 </suite>

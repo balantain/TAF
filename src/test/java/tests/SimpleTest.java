@@ -19,4 +19,14 @@ public class SimpleTest extends BaseTest{
                 .getText();
         assertThat(title).isEqualTo("Posts in 2022!");
     }
+
+    @Test
+    public void testShouldPass(){
+        String title = new SeleniumDev(driver)
+                .openPage()
+                .clickMoreNewsLink()
+                .getTitle()
+                .getText();
+        assertThat(title).isEqualTo("Posts in 2022");
+    }
 }

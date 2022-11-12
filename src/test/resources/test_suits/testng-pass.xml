@@ -3,7 +3,11 @@
 <suite name="All tests" verbose="1" >
     <test name="All tests"   >
         <classes>
-            <class name="tests.SimpleTest"/>
+            <class name="tests.SimpleTest">
+                <methods>
+                    <include name="testShouldPass"/>
+                </methods>
+            </class>
         </classes>
     </test>
     <listeners>

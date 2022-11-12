@@ -7,7 +7,6 @@
         </classes>
     </test>
     <listeners>
-        <listener class-name="utils.TestListener"/>
         <listener class-name="utils.ReportPortalTestListener"/>
     </listeners>
 </suite>

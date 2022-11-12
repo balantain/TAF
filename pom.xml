@@ -98,6 +98,8 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/test_suits/${test.suite}.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <workingDirectory>./</workingDirectory>
+                    <testFailureIgnore>true</testFailureIgnore>
                     <properties>
                         <property>
                             <name>usedefaultlisteners</name>
